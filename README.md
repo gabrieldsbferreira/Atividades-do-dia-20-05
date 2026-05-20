@@ -1,9 +1,14 @@
-Refatoração: PedidoProcessor em Kotlin
+# SQL - LeetCode Easy
 
-Atividade prática da matéria de Desenvolvimento Mobile. A ideia era pegar um código legado zoado e deixar ele apresentável.
+Repositório com resolução de atividades de SQL do LeetCode.
 
-Problema:
-Recebi esse código aqui pra processar pedido de delivery:
+### Atividade 1 - LeetCode 1757: Recyclable and Low Fat Products
 
-```kotlin
-class PedidoProcessor {
+**O que a atividade pediu:**  
+Achar o id dos produtos que são low fat E recicláveis ao mesmo tempo.
+
+**Código SQL:**
+```sql
+SELECT product_id
+FROM Products
+WHERE low_fats = 'Y' AND recyclable = 'Y'
